@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Details for the file {{ file.path }}:</h1>
+    <fieldset>
+        <legend>Details</legend>
+        <h2>Deleted by: "{{ file.destroyed_by }}"</h2>
+        <h2>Message: "{{ file.message }}"</h2>
+        <h2>At the time: {{ file.time_stamp }} (Server time / Berlin)</h2>
+    </fieldset>
+</body>
+</html>
